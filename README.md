@@ -5,6 +5,7 @@ This is a wrapper for calling into Python code from C# in .Net 3.5. In .Net 4.0 
 
 Example usage:
 
+```C#
 // Compile script
 PythonScript script = new PythonScript("example.py");
 
@@ -24,3 +25,4 @@ Console.WriteLine("Number property is {0}", number);
 PythonObject pyObj2 = pyObj.CallMethod("get_object");
 int number2 = pyObj2.GetProperty<int>("number");
 Console.WriteLine("Number property for 2nd object is {0}", number2);
+```
