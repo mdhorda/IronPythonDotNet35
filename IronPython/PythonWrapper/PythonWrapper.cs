@@ -161,7 +161,7 @@ namespace PythonWrapper
         }
 
         /// <summary>
-        /// Calls a static method defined in the class. This should be used when you expect the method to return a managed (C#) object.
+        /// Calls a static method defined in the class. This should be used when you expect the method to return a C# object.
         /// </summary>
         /// <typeparam name="T">Type of object returned by method.</typeparam>
         /// <param name="methodName">Method name.</param>
@@ -236,7 +236,7 @@ namespace PythonWrapper
         }
 
         /// <summary>
-        /// Call method on Python object. This should be used when you expect the method to return a managed (C#) object.
+        /// Call method on Python object. This should be used when you expect the method to return a C# object.
         /// </summary>
         /// <typeparam name="T">Type of object returned by method.</typeparam>
         /// <param name="methodName">Method name.</param>
@@ -273,7 +273,7 @@ namespace PythonWrapper
         /// <summary>
         /// Gets property from Python object.
         /// </summary>
-        /// <typeparam name="T">Type of property. This should be used when you expect the method to return a managed (C#) object.</typeparam>
+        /// <typeparam name="T">Type of property. This should be used when you expect the method to return a (C#) object.</typeparam>
         /// <param name="propertyName">Property name.</param>
         /// <returns>Python property.</returns>
         public T GetProperty<T>(string propertyName)
@@ -384,7 +384,7 @@ namespace PythonWrapper
         }
 
         /// <summary>
-        /// Calls a global function defined in the script. This should be used when you expect the method to return a Python object.
+        /// Calls a global function defined in the script. This should be used when you expect the method to return a C# object.
         /// </summary>
         /// <param name="functionName">Function name.</param>
         /// <param name="parameters">Parameters to pass to function.</param>
